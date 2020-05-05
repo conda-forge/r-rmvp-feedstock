@@ -61,6 +61,7 @@ about:
   license: Apache-2.0
   summary: A memory-efficient, visualize-enhanced, parallel-accelerated Genome-Wide Association Study (GWAS) tool.
   license_family: APACHE
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
