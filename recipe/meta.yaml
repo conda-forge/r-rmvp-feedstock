@@ -1,4 +1,4 @@
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rMVP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rMVP/rMVP_{{ version }}.tar.gz
-  sha256: ab3a12a45aff4e5d698e2f757ba72ea3308619f3a7404346408c51dab9739658
+  sha256: c82f42449e8e56eb0b13f8d64267047496a3f0df73b2876320772dcf2b44f6cc
 
 build:
   merge_build_host: true  # [win]
