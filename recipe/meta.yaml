@@ -30,6 +30,15 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-bh                         # [build_platform != target_platform]
+    - r-mass                       # [build_platform != target_platform]
+    - r-rcpp                       # [build_platform != target_platform]
+    - r-rcpparmadillo              # [build_platform != target_platform]
+    - r-rcppeigen                  # [build_platform != target_platform]
+    - r-rcppprogress               # [build_platform != target_platform]
+    - r-bigmemory                  # [build_platform != target_platform]
+    - r-rhpcblasctl                 # [build_platform != target_platform]
   host:
     - r-base
     - r-bh
@@ -39,16 +48,18 @@ requirements:
     - r-rcppeigen
     - r-rcppprogress
     - r-bigmemory
+    - r-rhpcblasctl
   run:
     - r-base
     - llvm-openmp                # [osx]
-    - r-bh
+    # - r-bh
     - r-mass
     - r-rcpp
     - r-rcpparmadillo
     - r-rcppeigen
     - r-rcppprogress
     - r-bigmemory
+    - r-rhpcblasctl
 
 test:
   commands:
@@ -59,7 +70,6 @@ about:
   home: https://github.com/XiaoleiLiuBio/rMVP
   license: Apache-2.0
   summary: A memory-efficient, visualize-enhanced, parallel-accelerated Genome-Wide Association Study (GWAS) tool.
-  license_family: APACHE
   license_file: LICENSE
 
 extra:
