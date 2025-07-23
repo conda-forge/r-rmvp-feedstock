@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rMVP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rMVP/rMVP_{{ version }}.tar.gz
-  sha256: d7888a51939aa82ae7a40df4d5eee0e5be6ff494e40ae1311f25d1b8b0cb98b8
+  sha256: 0cf100ce46b709b6c46c0f9d6d046d01d6946ed2d5c8f1375a49037416da00aa
 
 build:
   number: 0
